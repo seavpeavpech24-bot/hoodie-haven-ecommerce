@@ -2,7 +2,7 @@
 const productData = {
     id: 'HH-BLK-001',
     name: 'Classic Black Hoodie',
-    price: 49.99,
+    price: 49.99, 
     oldPrice: 69.99,
     discount: 30,
     rating: 4.5,
@@ -270,4 +270,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initBuyNow();
     initWishlist();
     updateCartCount();
+
 }); 
