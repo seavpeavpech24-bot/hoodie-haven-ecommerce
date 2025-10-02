@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Black Hoodie - Hoodie Haven</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #3B82F6, #1D4ED8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .tab-active {
+            color: #3B82F6;
+            border-bottom: 2px solid #3B82F6;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar (Same as index.html) -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold gradient-text">Hoodie Haven</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
+                    <a href="collection.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Collection</a>
+                    <a href="sizes.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Sizes</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600 transition duration-300">About</a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">
+                        <i class="fas fa-search text-lg"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300 relative">
+                        <i class="fas fa-shopping-cart text-lg"></i>
+                        <span class="cart-count absolute -top-2 -right-2 bg-blue-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">
+                        <i class="fas fa-user text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Details Section -->
+    <div class="max-w-7xl mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Product Images -->
+            <div class="space-y-4">
+                <div class="relative rounded-lg overflow-hidden">
+                    <img src="https://i.pinimg.com/736x/d3/88/9e/d3889e3a818a6ab8fbe6933d31c6a32d.jpg" alt="Classic Black Hoodie" class="main-image w-full h-[500px] object-cover">
+                    <div class="absolute top-4 left-4">
+                        <span class="bg-red-500 text-white px-3 py-1 rounded-full text-sm">-30%</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-4 gap-4">
+                    <div class="thumbnail rounded-lg overflow-hidden cursor-pointer hover-scale ring-2 ring-blue-600">
+                        <img src="https://i.pinimg.com/736x/d3/88/9e/d3889e3a818a6ab8fbe6933d31c6a32d.jpg" alt="Thumbnail 1" class="w-full h-24 object-cover">
+                    </div>
+                    <div class="thumbnail rounded-lg overflow-hidden cursor-pointer hover-scale">
+                        <img src="https://i.pinimg.com/736x/93/f6/e4/93f6e4c42f24c2a9433fa46e9f9fcebe.jpg" alt="Thumbnail 2" class="w-full h-24 object-cover">
+                    </div>
+                    <div class="thumbnail rounded-lg overflow-hidden cursor-pointer hover-scale">
+                        <img src="https://i.pinimg.com/736x/58/40/20/5840206289671285071817096173af96.jpg" alt="Thumbnail 3" class="w-full h-24 object-cover">
+                    </div>
+                    <div class="thumbnail rounded-lg overflow-hidden cursor-pointer hover-scale">
+                        <img src="https://i.pinimg.com/736x/28/e2/df/28e2df99edd4dc354cb7225207929d46.jpg" alt="Thumbnail 4" class="w-full h-24 object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="space-y-6">
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-900">Classic Black Hoodie</h1>
+                    <div class="flex items-center mt-2 space-x-4">
+                        <div class="flex items-center">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-600 ml-2">(128 reviews)</span>
+                        </div>
+                        <span class="text-gray-500">|</span>
+                        <span class="text-gray-600">SKU: HH-BLK-001</span>
+                    </div>
+                </div>
+
+                <div class="flex items-baseline space-x-4">
+                    <span class="current-price text-3xl font-bold text-red-600">$49.99</span>
+                    <span class="text-xl text-gray-500 line-through">$69.99</span>
+                </div>
+
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="text-sm font-medium text-gray-900 mb-2">Color</h3>
+                        <div class="flex space-x-3">
+                            <button class="color-button w-8 h-8 rounded-full bg-black border-2 border-blue-600" data-color="black"></button>
+                            <button class="color-button w-8 h-8 rounded-full bg-gray-500 border-2 border-transparent hover:border-blue-600" data-color="gray"></button>
+                            <button class="color-button w-8 h-8 rounded-full bg-blue-600 border-2 border-transparent hover:border-blue-600" data-color="blue"></button>
+                            <button class="color-button w-8 h-8 rounded-full bg-red-600 border-2 border-transparent hover:border-blue-600" data-color="red"></button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-sm font-medium text-gray-900 mb-2">Size</h3>
+                        <div class="flex space-x-3">
+                            <button class="size-button px-4 py-2 border border-gray-300 rounded-md hover:border-blue-600 hover:text-blue-600">S</button>
+                            <button class="size-button px-4 py-2 border border-gray-300 rounded-md hover:border-blue-600 hover:text-blue-600 border-blue-600 text-blue-600">M</button>
+                            <button class="size-button px-4 py-2 border border-gray-300 rounded-md hover:border-blue-600 hover:text-blue-600">L</button>
+                            <button class="size-button px-4 py-2 border border-gray-300 rounded-md hover:border-blue-600 hover:text-blue-600">XL</button>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center space-x-4">
+                        <div class="flex items-center border border-gray-300 rounded-md">
+                            <button class="quantity-minus px-3 py-2 text-gray-600 hover:text-blue-600">-</button>
+                            <input type="number" class="quantity-input w-16 text-center border-x border-gray-300 py-2" value="1" min="1">
+                            <button class="quantity-plus px-3 py-2 text-gray-600 hover:text-blue-600">+</button>
+                        </div>
+                        <span class="text-sm text-gray-600">Selected: <span class="selected-color font-medium">Black</span>, <span class="selected-size font-medium">M</span></span>
+                    </div>
+
+                    <div class="flex space-x-4">
+                        <button class="buy-now flex-1 bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition duration-300">
+                            Buy Now
+                        </button>
+                        <button class="add-to-cart flex-1 border border-blue-600 text-blue-600 py-3 rounded-md hover:bg-blue-50 transition duration-300">
+                            Add to Cart
+                        </button>
+                    </div>
+
+                    <div class="border-t pt-4">
+                        <div class="flex items-center space-x-4">
+                            <span class="text-sm text-gray-600">Share:</span>
+                            <div class="flex space-x-3">
+                                <a href="#" class="text-gray-400 hover:text-blue-600"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-gray-400 hover:text-pink-600"><i class="fab fa-pinterest"></i></a>
+                                <a href="#" class="text-gray-400 hover:text-green-600"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Tabs -->
+        <div class="mt-16">
+            <div class="border-b">
+                <nav class="flex space-x-8">
+                    <button class="tab-button py-4 px-1 border-b-2 font-medium text-sm tab-active" data-tab="details">
+                        Details
+                    </button>
+                    <button class="tab-button py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab="reviews">
+                        Reviews
+                    </button>
+                    <button class="tab-button py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300" data-tab="discussion">
+                        Discussion
+                    </button>
+                </nav>
+            </div>
+
+            <!-- Tab Content -->
+            <div class="py-8">
+                <div id="details" class="tab-content">
+                    <div class="prose max-w-none">
+                        <h3 class="text-lg font-medium text-gray-900 mb-4">Product Description</h3>
+                        <p class="text-gray-600 mb-4">
+                            Premium quality black hoodie made from 100% cotton blend. Features include:
+                        </p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Kangaroo pocket for storage and warmth</li>
+                            <li>Adjustable drawstring hood</li>
+                            <li>Ribbed cuffs and hem for a snug fit</li>
+                            <li>Double-lined hood for extra comfort</li>
+                            <li>Machine washable</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="reviews" class="tab-content hidden">
+                    <!-- Reviews content will be loaded dynamically -->
+                </div>
+                <div id="discussion" class="tab-content hidden">
+                    <!-- Discussion content will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Products -->
+        <div class="mt-16">
+            <h2 class="text-2xl font-bold mb-8">Related Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Product Card 1 -->
+                <div class="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://i.pinimg.com/736x/d3/88/9e/d3889e3a818a6ab8fbe6933d31c6a32d.jpg" alt="Classic Black Hoodie" class="w-full h-48 md:h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute top-2 right-2 flex flex-col gap-2">
+                            <button class="w-8 h-8 rounded-full bg-white/80 hover:bg-white flex items-center justify-center transition-colors">
+                                <i class="far fa-heart text-gray-600 hover:text-red-500"></i>
+                            </button>
+                            <button class="w-8 h-8 rounded-full bg-white/80 hover:bg-white flex items-center justify-center transition-colors">
+                                <i class="fas fa-shopping-cart text-gray-600 hover:text-blue-500"></i>
+                            </button>
+                        </div>
+                        <div class="absolute top-2 left-2">
+                            <span class="bg-red-500 text-white px-2 py-1 rounded text-xs">-30%</span>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <a href="product-details.html" class="w-full bg-white text-gray-900 py-2 rounded text-sm font-medium hover:bg-blue-600 hover:text-white transition-colors">
+                                Quick View
+                            </a>
+                        </div>
+                    </div>
+                    <div class="p-3">
+                        <div class="flex items-center gap-1 mb-1">
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="text-gray-500 text-xs">(128)</span>
+                        </div>
+                        <h3 class="text-sm font-medium text-gray-800 mb-1 line-clamp-2">Classic Black Hoodie Premium Cotton Blend</h3>
+                        <div class="flex items-center gap-2">
+                            <span class="text-lg font-bold text-red-600">$49.99</span>
+                            <span class="text-sm text-gray-500 line-through">$69.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://i.pinimg.com/736x/93/f6/e4/93f6e4c42f24c2a9433fa46e9f9fcebe.jpg" alt="Oversized Gray Hoodie" class="w-full h-48 md:h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute top-2 right-2 flex flex-col gap-2">
+                            <button class="w-8 h-8 rounded-full bg-white/80 hover:bg-white flex items-center justify-center transition-colors">
+                                <i class="far fa-heart text-gray-600 hover:text-red-500"></i>
+                            </button>
+                            <button class="w-8 h-8 rounded-full bg-white/80 hover:bg-white flex items-center justify-center transition-colors">
+                                <i class="fas fa-shopping-cart text-gray-600 hover:text-blue-500"></i>
+                            </button>
+                        </div>
+                        <div class="absolute top-2 left-2">
+                            <span class="bg-green-500 text-white px-2 py-1 rounded text-xs">Best Seller</span>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="w-full bg-white text-gray-900 py-2 rounded text-sm font-medium hover:bg-blue-600 hover:text-white transition-colors">
+                                Quick View
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-3">
+                        <div class="flex items-center gap-1 mb-1">
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-xs">(256)</span>
+                        </div>
+                        <h3 class="text-sm font-medium text-gray-800 mb-1 line-clamp-2">Oversized Gray Hoodie Relaxed Fit</h3>
+                        <div class="flex items-center gap-2">
+                            <span class="text-lg font-bold text-red-600">$54.99</span>
+                            <span class="text-sm text-gray-500 line-through">$74.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://i.pinimg.com/736x/58/40/20/5840206289671285071817096173af96.jpg" alt="Zip-Up Navy Hoodie" class="w-full h-48 md:h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute top-2 right-2 flex flex-col gap-2">
+                            <button class="w-8 h-8 rounded-full bg-white/80 hover:bg-white flex items-center justify-center transition-colors">
+                                <i class="far fa-heart text-gray-600 hover:text-red-500"></i>
+                            </button>
+                            <button class="w-8 h-8 rounded-full bg-white/80 hover:bg-white flex items-center justify-center transition-colors">
+                                <i class="fas fa-shopping-cart text-gray-600 hover:text-blue-500"></i>
+                            </button>
+                        </div>
+                        <div class="absolute top-2 left-2">
+                            <span class="bg-blue-500 text-white px-2 py-1 rounded text-xs">New</span>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="w-full bg-white text-gray-900 py-2 rounded text-sm font-medium hover:bg-blue-600 hover:text-white transition-colors">
+                                Quick View
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-3">
+                        <div class="flex items-center gap-1 mb-1">
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-xs">(89)</span>
+                        </div>
+                        <h3 class="text-sm font-medium text-gray-800 mb-1 line-clamp-2">Zip-Up Navy Hoodie Full-Zip Design</h3>
+                        <div class="flex items-center gap-2">
+                            <span class="text-lg font-bold text-red-600">$59.99</span>
+                            <span class="text-sm text-gray-500 line-through">$79.99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="group bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://i.pinimg.com/736x/28/e2/df/28e2df99edd4dc354cb7225207929d46.jpg" alt="Crop Top Hoodie" class="w-full h-48 md:h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute top-2 right-2 flex flex-col gap-2">
+                            <button class="w-8 h-8 rounded-full bg-white/80 hover:bg-white flex items-center justify-center transition-colors">
+                                <i class="far fa-heart text-gray-600 hover:text-red-500"></i>
+                            </button>
+                            <button class="w-8 h-8 rounded-full bg-white/80 hover:bg-white flex items-center justify-center transition-colors">
+                                <i class="fas fa-shopping-cart text-gray-600 hover:text-blue-500"></i>
+                            </button>
+                        </div>
+                        <div class="absolute top-2 left-2">
+                            <span class="bg-purple-500 text-white px-2 py-1 rounded text-xs">Trending</span>
+                        </div>
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <button class="w-full bg-white text-gray-900 py-2 rounded text-sm font-medium hover:bg-blue-600 hover:text-white transition-colors">
+                                Quick View
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-3">
+                        <div class="flex items-center gap-1 mb-1">
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="text-gray-500 text-xs">(167)</span>
+                        </div>
+                        <h3 class="text-sm font-medium text-gray-800 mb-1 line-clamp-2">Crop Top Hoodie Stylish Design</h3>
+                        <div class="flex items-center gap-2">
+                            <span class="text-lg font-bold text-red-600">$44.99</span>
+                            <span class="text-sm text-gray-500 line-through">$64.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="bg-gray-900 text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 gradient-text">Hoodie Haven</h3>
+                    <p class="text-gray-400">Your destination for premium quality hoodies</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Shipping Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Returns & Exchanges</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Customer Service</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Size Guide</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Care Instructions</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter text-2xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-pinterest text-2xl"></i></a>
+                    </div>
+                    <div class="mt-6">
+                        <h5 class="text-lg font-semibold mb-2">Newsletter</h5>
+                        <div class="flex">
+                            <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded-l-lg w-full text-gray-900">
+                            <button class="bg-blue-600 px-4 py-2 rounded-r-lg hover:bg-blue-700 transition duration-300">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Hoodie Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="product-details.js"></script>
+</body>
+</html> 

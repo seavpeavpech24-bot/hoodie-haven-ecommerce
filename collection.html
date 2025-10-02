@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection - Hoodie Haven</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #3B82F6, #1D4ED8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold gradient-text">Hoodie Haven</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Home</a>
+                    <a href="collection.html" class="text-blue-600">Collection</a>
+                    <a href="sizes.html" class="text-gray-600 hover:text-blue-600 transition duration-300">Sizes</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600 transition duration-300">About</a>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">
+                        <i class="fas fa-search text-lg"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300 relative">
+                        <i class="fas fa-shopping-cart text-lg"></i>
+                        <span class="cart-count absolute -top-2 -right-2 bg-blue-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-blue-600 transition duration-300">
+                        <i class="fas fa-user text-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Collection Header -->
+    <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h1 class="text-4xl font-bold mb-4">Our Collection</h1>
+            <p class="text-lg text-blue-100">Discover our premium selection of hoodies</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Filters Sidebar -->
+            <div class="md:col-span-1">
+                <div class="bg-white rounded-lg shadow-sm p-6 space-y-6">
+                    <!-- Categories -->
+                    <div>
+                        <h3 class="font-medium text-gray-900 mb-4">Categories</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-blue-600">
+                                <span class="ml-2 text-gray-600">Classic Hoodies</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-blue-600">
+                                <span class="ml-2 text-gray-600">Zip-Up Hoodies</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-blue-600">
+                                <span class="ml-2 text-gray-600">Oversized Hoodies</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-blue-600">
+                                <span class="ml-2 text-gray-600">Crop Top Hoodies</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Price Range -->
+                    <div>
+                        <h3 class="font-medium text-gray-900 mb-4">Price Range</h3>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-blue-600">
+                                <span class="ml-2 text-gray-600">Under $50</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-blue-600">
+                                <span class="ml-2 text-gray-600">$50 - $75</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-blue-600">
+                                <span class="ml-2 text-gray-600">$75 - $100</span>
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="rounded text-blue-600">
+                                <span class="ml-2 text-gray-600">Over $100</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Colors -->
+                    <div>
+                        <h3 class="font-medium text-gray-900 mb-4">Colors</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <button class="w-8 h-8 rounded-full bg-black border-2 border-blue-600"></button>
+                            <button class="w-8 h-8 rounded-full bg-gray-500 border-2 border-transparent hover:border-blue-600"></button>
+                            <button class="w-8 h-8 rounded-full bg-blue-600 border-2 border-transparent hover:border-blue-600"></button>
+                            <button class="w-8 h-8 rounded-full bg-red-600 border-2 border-transparent hover:border-blue-600"></button>
+                            <button class="w-8 h-8 rounded-full bg-green-600 border-2 border-transparent hover:border-blue-600"></button>
+                            <button class="w-8 h-8 rounded-full bg-yellow-400 border-2 border-transparent hover:border-blue-600"></button>
+                        </div>
+                    </div>
+
+                    <!-- Sizes -->
+                    <div>
+                        <h3 class="font-medium text-gray-900 mb-4">Sizes</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <button class="px-3 py-1 border border-gray-300 rounded-md hover:border-blue-600 hover:text-blue-600">XS</button>
+                            <button class="px-3 py-1 border border-gray-300 rounded-md hover:border-blue-600 hover:text-blue-600">S</button>
+                            <button class="px-3 py-1 border border-gray-300 rounded-md hover:border-blue-600 hover:text-blue-600">M</button>
+                            <button class="px-3 py-1 border border-gray-300 rounded-md hover:border-blue-600 hover:text-blue-600">L</button>
+                            <button class="px-3 py-1 border border-gray-300 rounded-md hover:border-blue-600 hover:text-blue-600">XL</button>
+                            <button class="px-3 py-1 border border-gray-300 rounded-md hover:border-blue-600 hover:text-blue-600">XXL</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="md:col-span-3">
+                <!-- Sort Options -->
+                <div class="flex justify-between items-center mb-6">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-gray-600">Sort by:</span>
+                        <select class="border border-gray-300 rounded-md px-3 py-1 focus:outline-none focus:ring-2 focus:ring-blue-600">
+                            <option>Featured</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Best Selling</option>
+                            <option>Newest</option>
+                        </select>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button class="p-2 border border-gray-300 rounded-md hover:border-blue-600 hover:text-blue-600">
+                            <i class="fas fa-th-large"></i>
+                        </button>
+                        <button class="p-2 border border-gray-300 rounded-md hover:border-blue-600 hover:text-blue-600">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Product cards will be dynamically loaded here -->
+                </div>
+
+                <!-- Pagination -->
+                <div class="flex justify-center mt-8">
+                    <nav class="flex items-center space-x-2">
+                        <button class="px-3 py-1 border border-gray-300 rounded-md hover:border-blue-600 hover:text-blue-600">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="px-3 py-1 border border-blue-600 text-blue-600 rounded-md">1</button>
+                        <button class="px-3 py-1 border border-gray-300 rounded-md hover:border-blue-600 hover:text-blue-600">2</button>
+                        <button class="px-3 py-1 border border-gray-300 rounded-md hover:border-blue-600 hover:text-blue-600">3</button>
+                        <button class="px-3 py-1 border border-gray-300 rounded-md hover:border-blue-600 hover:text-blue-600">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 mt-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">About Us</h3>
+                    <p class="text-gray-400">Premium quality hoodies for every style and occasion.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Shop</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Customer Service</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Shipping Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Returns & Exchanges</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Hoodie Haven. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="collection.js"></script>
+</body>
+</html> 
