@@ -102,7 +102,7 @@ php -S localhost:8000
 
 ## 🌐 Live Demo
 
-Visit the live website at: [Your Live URL]
+Visit the live website at: [[Your Live URL](https://seavpeavpech24-bot.github.io/hoodie-haven-ecommerce/)]
 
 ## 📸 Screenshots
 
@@ -180,3 +180,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ⭐ If you found this project helpful, please give it a star!
 
 A
+
